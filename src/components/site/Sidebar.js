@@ -5,6 +5,7 @@ import FunctionalComponentDemo from "../concepts/FunctionalComponents/Functional
 import JSXRules from "../concepts/FunctionalComponents/JSXRules";
 import State from "../concepts/FunctionalComponents/State";
 import Effects from "../concepts/FunctionalComponents/Effects";
+import PropsDemo from "../concepts/FunctionalComponents/PropsDemo";
 
 const Sidebar = () => {
   return (
@@ -28,6 +29,9 @@ const Sidebar = () => {
           </li>
           <li>
             <Link to="/effects">Effects</Link>
+          </li>
+          <li>
+            <Link to='propsdemo'>Props Demo</Link>
           </li>
         </ul>
       </div>
@@ -54,6 +58,7 @@ const Sidebar = () => {
           <Route exact path="/effects">
             <Effects />
           </Route>
+          <Route exact path='/propsdemo'><PropsDemo /></Route>
         </Switch>
       </div>
     </div>
