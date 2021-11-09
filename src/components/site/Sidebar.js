@@ -6,6 +6,7 @@ import JSXRules from "../concepts/FunctionalComponents/JSXRules";
 import State from "../concepts/FunctionalComponents/State";
 import Effects from "../concepts/FunctionalComponents/Effects";
 import PropsDemo from "../concepts/FunctionalComponents/PropsDemo";
+import TimePiecesApp from '../Apps/components/apps/timer-apps/TimePiecesApp'
 
 const Sidebar = () => {
   return (
@@ -31,7 +32,10 @@ const Sidebar = () => {
             <Link to="/effects">Effects</Link>
           </li>
           <li>
-            <Link to='propsdemo'>Props Demo</Link>
+            <Link to='/propsdemo'>Props Demo</Link>
+          </li>
+          <li>
+            <Link to='/timer'>Timers</Link>
           </li>
         </ul>
       </div>
@@ -59,6 +63,7 @@ const Sidebar = () => {
             <Effects />
           </Route>
           <Route exact path='/propsdemo'><PropsDemo /></Route>
+          <Route exact path='/timer'><TimePiecesApp /></Route>
         </Switch>
       </div>
     </div>
