@@ -6,18 +6,18 @@ const PropsDemo = () => {
     const [backgroundColor, setBackgroundColor] = useState('purple');
     const [borderRadius, setBorderRadius] = useState('5px');
     const [borderStyle, setBorderStyle] = useState('dashed');
-    const [display, setDisplay] = useState('inline-block');
-    const [width, setWidth] = useState('350px');
-    const [textAlign, setTextAlign] = useState('center');
+    // const [display, setDisplay] = useState('inline-block');
+    // const [width, setWidth] = useState('350px');
+    // const [textAlign, setTextAlign] = useState('center');
 
     let styles = {
         color: color,
         backgroundColor: backgroundColor,
         borderRadius: borderRadius,
         borderStyle: borderStyle,
-        display: display,
-        width: width,
-        textAlign: textAlign
+        // display: display,
+        // width: width,
+        // textAlign: textAlign
     }
 
     const toggleColor = () => {

@@ -66,7 +66,6 @@ const HelloWorld = function() {
     );
 };
 
-// fat arrow function component - 3 fewer lines
 const HelloWorldFatArrow = () => 
     <div>
         <Card>

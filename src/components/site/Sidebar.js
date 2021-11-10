@@ -7,6 +7,7 @@ import State from "../concepts/FunctionalComponents/State";
 import Effects from "../concepts/FunctionalComponents/Effects";
 import PropsDemo from "../concepts/FunctionalComponents/PropsDemo";
 import TimePiecesApp from '../Apps/components/apps/timer-apps/TimePiecesApp'
+import NytApp from "../Apps/components/apps/nyt-app/NytApp";
 
 const Sidebar = () => {
   return (
@@ -37,6 +38,9 @@ const Sidebar = () => {
           <li>
             <Link to='/timer'>Timers</Link>
           </li>
+          <li>
+            <Link to='/nytApp'>NYT App</Link>
+          </li>
         </ul>
       </div>
       <div className="sidebar-route">
@@ -64,6 +68,7 @@ const Sidebar = () => {
           </Route>
           <Route exact path='/propsdemo'><PropsDemo /></Route>
           <Route exact path='/timer'><TimePiecesApp /></Route>
+          <Route exact path='/nytApp'><NytApp /></Route>
         </Switch>
       </div>
     </div>
